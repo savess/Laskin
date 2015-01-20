@@ -6,6 +6,16 @@ package Sovelluslogiikka;
  */
 public class Laskutoimitukset {
     private double luku2;
+    
+    
+    public Laskutoimitukset() {
+        
+    }
+    public Laskutoimitukset(double luku2) {
+        this.luku2 = luku2;
+    }
+
+    
  
     
     public void miinus(double luku1) {
@@ -52,6 +62,11 @@ public class Laskutoimitukset {
 
     public double tulos() {
         return luku2;
+    }
+    
+    @Override
+    public String toString() {
+        return "Luku on " + this.luku2;
     }
 
    
