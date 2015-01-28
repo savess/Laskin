@@ -46,10 +46,11 @@
                 <configuration>
                     <targetClasses>
                         <param>Sovelluslogiikka.Laskutoimitukset*</param>
-                        
+                        <param>Sovelluslogiikka.LineaarinenYhtalopari*</param>
                     </targetClasses>
                     <targetTests>
                         <param>Sovelluslogiikka.Laskutoimitukset*</param>
+                        <param>Sovelluslogiikka.LineaarinenYhtalopari*</param>
                         
                     </targetTests>
                 </configuration>
