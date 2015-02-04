@@ -29,8 +29,8 @@ public class FunktionKuvaaja extends JPanel {
 
     /**
      *
-     * @param i
-     * @param k
+     * @param i ikkunankoko
+     * @param k koordinaatistontarkkuus
      * @param b
      * @param k
      */
