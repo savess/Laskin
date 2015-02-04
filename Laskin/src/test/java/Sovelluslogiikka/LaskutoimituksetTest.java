@@ -11,6 +11,9 @@ import static org.junit.Assert.*;
  *
  * @author saves
  */
+/**
+ * Luokka tarjoaa useita Laskutoimitukset luokan testejä
+ */
 public class LaskutoimituksetTest {
     
     Laskutoimitukset laskin;

@@ -11,6 +11,9 @@ import javax.swing.JTextField;
  *
  * @author saves
  */
+/**
+ * Luokka kuuntelee Laskinta
+ */
 public class Kuuntelija implements ActionListener {
     private JButton plussa;
     private JButton miinus;

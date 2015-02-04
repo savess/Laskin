@@ -11,6 +11,9 @@ import static org.junit.Assert.*;
  *
  * @author saves
  */
+/**
+ * Luokka tarjoaa LineaarinenYhtalopari luokan testejä
+ */
 public class LineaarinenYhtalopariTest {
     
     LineaarinenYhtalopari ly;

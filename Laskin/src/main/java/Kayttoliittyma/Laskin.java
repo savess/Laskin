@@ -14,6 +14,9 @@ import javax.swing.WindowConstants;
  *
  * @author saves
  */
+/**
+ * Luokka tarjoaa käyttöliittymän Laskimelle, Sovelluslogiikan Laskutoimitus luokalle
+ */
 public class Laskin implements Runnable {
     private JFrame jframe;
 
