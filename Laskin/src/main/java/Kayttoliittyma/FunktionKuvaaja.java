@@ -26,6 +26,7 @@ public class FunktionKuvaaja extends JPanel {
     private int xloppu;
     int koo;
     int bee;
+   
 
     /**
      *

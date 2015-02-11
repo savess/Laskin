@@ -12,8 +12,7 @@ public class Laskutoimitukset {
 
     private double luku2;
 
-    public Laskutoimitukset() {
-    }
+    public Laskutoimitukset() {}
 
     public Laskutoimitukset(double luku2) {
         this.luku2 = luku2;
@@ -70,9 +69,9 @@ public class Laskutoimitukset {
         luku2 /= luku1;
     }
 
-    public void prosentti(double luku1) {
+//    public void prosentti(double luku1) {
         //kesken
-    }
+  //  }
 
     /**
      * Metodi kertoo mikä luku2 tulee kun käyttäjän syöte korotetaan toiseen

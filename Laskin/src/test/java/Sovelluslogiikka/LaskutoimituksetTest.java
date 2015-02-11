@@ -18,6 +18,7 @@ public class LaskutoimituksetTest {
     
     Laskutoimitukset laskin;
     Laskutoimitukset laskin2;
+    Laskutoimitukset laskin3;
     
     public LaskutoimituksetTest() {
     }
@@ -44,6 +45,7 @@ public class LaskutoimituksetTest {
     //
      @Test
      public void hello() {}
+     
      
      @Test
     public void plussausToimiiOikein() {
@@ -86,6 +88,24 @@ public class LaskutoimituksetTest {
     public void tulosToimiiOikein() {
         laskin.tulos();
         assertEquals("Luku on 2.0", laskin.toString());
+    }
+     @Test
+    public void siniToimii() {
+        laskin3 = new Laskutoimitukset(0.0);
+        laskin3.sin(1);
+        assertEquals("Luku on 0.8414709848078965", laskin3.toString());
+    }
+     @Test
+    public void cosiniToimii() {
+        laskin3 = new Laskutoimitukset(0.0);
+        laskin3.cos(1);
+        assertEquals("Luku on 0.5403023058681398", laskin3.toString());
+    }
+     @Test
+    public void tanToimii() {
+        laskin3 = new Laskutoimitukset(0.0);
+        laskin3.tan(1);
+        assertEquals("Luku on 1.5574077246549023", laskin3.toString());
     }
      
 }

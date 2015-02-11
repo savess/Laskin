@@ -77,8 +77,8 @@ public class Kuuntelija implements ActionListener {
             laskutoimitukset.jakolasku(x);
         } else if (ae.getSource() == neliojuuri) {
             laskutoimitukset.neliojuuri(x);
-        } else if (ae.getSource() == prosentti) {
-            laskutoimitukset.prosentti(x);
+       // } else if (ae.getSource() == prosentti) {
+       //     laskutoimitukset.prosentti(x);
         } else if (ae.getSource() == potenssi) {
             laskutoimitukset.toiseenpotenssiin(x);
         } else if (ae.getSource() == sin) {
