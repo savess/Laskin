@@ -96,10 +96,16 @@ public class LaskutoimituksetTest {
         assertEquals("Luku on 0.8414709848078965", laskin3.toString());
     }
      @Test
-    public void cosiniToimii() {
+    public void cosiniToimii1() {
         laskin3 = new Laskutoimitukset(0.0);
         laskin3.cos(1);
         assertEquals("Luku on 0.5403023058681398", laskin3.toString());
+    }
+      @Test
+    public void cosiniToimii2() {
+        laskin3 = new Laskutoimitukset(0.0);
+        laskin3.cos(0);
+        assertEquals("Luku on 1.0", laskin3.toString());
     }
      @Test
     public void tanToimii() {

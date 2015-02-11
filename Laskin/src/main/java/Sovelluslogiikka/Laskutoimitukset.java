@@ -15,9 +15,8 @@ public class Laskutoimitukset {
     public Laskutoimitukset() {}
 
     public Laskutoimitukset(double luku2) {
-        this.luku2 = luku2;
+        this.luku2 = luku2; 
     }
-
     /**
      * Metodi kertoo mikä luku2 tulee kun siitä poistetaan käyttäjän antama
      * syöte
