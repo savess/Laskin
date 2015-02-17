@@ -97,6 +97,19 @@ public class Laskutoimitukset {
     public void neliojuuri(double luku1) {
         luku2 = java.lang.Math.sqrt(luku1);
     }
+    
+    /**
+     * Metodi kertoo mikä luku2 tulee kun käyttäjän syötteestä otetaan
+     * kuutiojuuri
+     *
+     *
+     * @param luku1 Käyttäjän antama syöte
+     *
+     *
+     */
+    public void kuutiojuuri(double luku1){
+        luku2 = java.lang.Math.cbrt(luku1);
+    }
 
     /**
      * Metodi kertoo mikä luku2 tulee kun käyttäjän syötteestä otetaan sin

@@ -50,6 +50,7 @@ public class Laskin implements Runnable {
         JButton kertomerkki = new JButton ("*");
         JButton jakomerkki = new JButton ("/");
         JButton neliojuuri = new JButton("√");
+        JButton kuutiojuuri = new JButton( "sqrt3" );
         JButton prosentti = new JButton("%");
         JButton potenssi = new JButton("x²");
         JButton sin = new JButton("sin");
@@ -62,13 +63,14 @@ public class Laskin implements Runnable {
         nollaus.setBackground(Color.darkGray.brighter());
         
         
-        Kuuntelija kuuntelija = new Kuuntelija(plussa, miinus, kertomerkki, jakomerkki, neliojuuri, 
+        Kuuntelija kuuntelija = new Kuuntelija(plussa, miinus, kertomerkki, jakomerkki, neliojuuri, kuutiojuuri, 
                 prosentti, potenssi, sin, cos, tan, tulos, nollaus, tulostekstikentta, syotetekstikentta);
         plussa.addActionListener(kuuntelija);
         miinus.addActionListener(kuuntelija);
         kertomerkki.addActionListener(kuuntelija);
         jakomerkki.addActionListener(kuuntelija);
         neliojuuri.addActionListener(kuuntelija);
+        kuutiojuuri.addActionListener(kuuntelija);
         prosentti.addActionListener(kuuntelija);
         potenssi.addActionListener(kuuntelija);
         sin.addActionListener(kuuntelija);
@@ -84,6 +86,7 @@ public class Laskin implements Runnable {
         panel.add(kertomerkki);
         panel.add(jakomerkki);
         panel.add(neliojuuri);
+        panel.add(kuutiojuuri);
         panel.add(prosentti);
         panel.add(potenssi);
         panel.add(sin);

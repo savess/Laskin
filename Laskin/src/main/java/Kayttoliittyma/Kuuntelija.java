@@ -15,11 +15,13 @@ import javax.swing.JTextField;
  * Luokka kuuntelee Laskinta
  */
 public class Kuuntelija implements ActionListener {
+
     private JButton plussa;
     private JButton miinus;
     private JButton kertomerkki;
     private JButton jakomerkki;
     private JButton neliojuuri;
+    private JButton kuutiojuuri;
     private JButton prosentti;
     private JButton potenssi;
     private JButton sin;
@@ -28,20 +30,19 @@ public class Kuuntelija implements ActionListener {
     private JButton tulos;
     private JButton nollaus;
     private JTextField tulostekstikentta;
-    private JTextField syotetekstikentta; 
+    private JTextField syotetekstikentta;
     private Laskutoimitukset laskutoimitukset;
-    
-    
-    
+
     Kuuntelija(JButton plussa, JButton miinus, JButton kertomerkki, JButton jakomerkki,
-            JButton neliojuuri, JButton prosentti, JButton potenssi, JButton sin, JButton cos, JButton tan,
-            JButton tulos, JButton nollaus, 
+            JButton neliojuuri, JButton kuutiojuuri, JButton prosentti, JButton potenssi, JButton sin, JButton cos, JButton tan,
+            JButton tulos, JButton nollaus,
             JTextField tulostekstikentta, JTextField syotetekstikentta) {
         this.plussa = plussa;
         this.miinus = miinus;
         this.kertomerkki = kertomerkki;
         this.jakomerkki = jakomerkki;
         this.neliojuuri = neliojuuri;
+        this.kuutiojuuri = kuutiojuuri;
         this.prosentti = prosentti;
         this.potenssi = potenssi;
         this.sin = sin;
@@ -52,21 +53,21 @@ public class Kuuntelija implements ActionListener {
         this.tulostekstikentta = tulostekstikentta;
         this.syotetekstikentta = syotetekstikentta;
         this.laskutoimitukset = new Laskutoimitukset();
-        
-        
+
+
     }
 
     @Override
     public void actionPerformed(ActionEvent ae) {
-        
+
         double x = 0;
-        
+
         try {
-           x = Integer.parseInt(syotetekstikentta.getText());
+            x = Integer.parseInt(syotetekstikentta.getText());
         } catch (Exception e) {
             System.out.println("Tapahtui virhe; et syöttänyt kunnollista numeroa.");
         }
-        
+
         if (ae.getSource() == plussa) {
             laskutoimitukset.plussa(x);
         } else if (ae.getSource() == miinus) {
@@ -77,8 +78,10 @@ public class Kuuntelija implements ActionListener {
             laskutoimitukset.jakolasku(x);
         } else if (ae.getSource() == neliojuuri) {
             laskutoimitukset.neliojuuri(x);
-       // } else if (ae.getSource() == prosentti) {
-       //     laskutoimitukset.prosentti(x);
+        } else if (ae.getSource() == kuutiojuuri) {
+            laskutoimitukset.kuutiojuuri(x);
+            // } else if (ae.getSource() == prosentti) {
+            //     laskutoimitukset.prosentti(x);
         } else if (ae.getSource() == potenssi) {
             laskutoimitukset.toiseenpotenssiin(x);
         } else if (ae.getSource() == sin) {
@@ -92,7 +95,7 @@ public class Kuuntelija implements ActionListener {
         } else {
             laskutoimitukset.nollaus();
         }
-        
+
         double tulos = laskutoimitukset.tulos();
         syotetekstikentta.setText("");
         tulostekstikentta.setText("" + tulos);
@@ -101,7 +104,6 @@ public class Kuuntelija implements ActionListener {
         } else {
             nollaus.setEnabled(true);
         }
-        
+
     }
-    
 }

@@ -80,6 +80,12 @@ public class LaskutoimituksetTest {
         assertEquals("Luku on 2.0", laskin.toString());
     }
      @Test
+    public void kuutiojuuriToimiiOikein() {
+        laskin2 = new Laskutoimitukset(0.0);
+        laskin2.kuutiojuuri(3);
+        assertEquals("Luku on 2.0", laskin.toString());
+    }
+     @Test
     public void nollausToimiiOikein() {
         laskin.nollaus();
         assertEquals("Luku on 0.0", laskin.toString());
