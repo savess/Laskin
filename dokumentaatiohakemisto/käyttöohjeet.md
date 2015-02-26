@@ -3,12 +3,10 @@ Laskimen käyttöohjeet:
 Kaikki lähtee käyntiin Laskin projektin laskin.laskin paketin App-luokasta, jossa on main metodi.
 
 Tekstinkäyttöliittymä näyttää käyttäjälle seuraavat ohjeet:
+
 Anna käskyksi laskin, jos haluat laskea yksinkertaisia laskuja. Graafinen
-
 Anna käskyksi tayr, jos haluat ratkaista toiseen asteen yhtälön. Teksti
-
 Anna käskyksi yhtälöpari, jos haluat ratkoa yhtälöpareja. Teksti
-
 Anna käskyksi kuvaaja, jos haluat piirtää funktion kuvaajan. Teksti/Graafinen
 
 Seuraavaksi käyttäjää pyydetään antamaan käsky.
