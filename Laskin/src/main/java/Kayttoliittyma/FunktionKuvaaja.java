@@ -12,8 +12,9 @@ import javax.swing.WindowConstants;
  * @author saves
  */
 /**
- * Luokka tarjoaa lineaarisen funktion kuvaajan käyttöliittymän (Sovelluslogiikka Laskutoimitukset)
- * Tällä hetkellä vain koordinaatiston piirto onnistuu
+ * Luokka tarjoaa lineaarisen funktion kuvaajan käyttöliittymän
+ * (Sovelluslogiikka Laskutoimitukset) Tällä hetkellä vain koordinaatiston
+ * piirto onnistuu
  */
 public class FunktionKuvaaja extends JPanel {
 
@@ -26,14 +27,13 @@ public class FunktionKuvaaja extends JPanel {
     private int xloppu;
     int koo;
     int bee;
-   
 
     /**
      *
      * @param i ikkunankoko
      * @param k koordinaatistontarkkuus
-     * @param b
-     * @param k
+     * @param b apumuuttuja
+     * @param k apumuuttuja
      */
     public FunktionKuvaaja(int i, double k, int b, int kk) {
         ikkunanKoko = i;
@@ -45,11 +45,12 @@ public class FunktionKuvaaja extends JPanel {
 
     public void run() {
 
-        System.out.print("Ikkunan koko: ");
+        System.out.print("Anna ikkunan koko: ");
         int size = Integer.parseInt(lukija.nextLine());
-        System.out.print("Koordinaatiston koko/tarkkuus: ");
+        System.out.print("Anna koordinaatiston koko/tarkkuus: ");
         double value = lukija.nextDouble();
         lukija.nextLine();
+
 
 
 
@@ -69,7 +70,7 @@ public class FunktionKuvaaja extends JPanel {
         g.drawLine(0, ikkunanKoko / 2, ikkunanKoko, ikkunanKoko / 2);
         double[] a = x();
         int x = ikkunanKoko / 10, y = ikkunanKoko / 2, vA = 8;
-        g.setFont(new Font("Sansserif", Font.PLAIN, ikkunanKoko / 30));
+        g.setFont(new Font("Sansserif", Font.BOLD, ikkunanKoko / 30));
         for (int i = 0; i < 9; i++) {
             g.drawLine(x, y + 5, x, y - 5);
             if (i != 4 && vA != 4) {
@@ -97,6 +98,9 @@ public class FunktionKuvaaja extends JPanel {
         yloppu = koo * 400 + bee;
         xloppu = 400;
         g.drawLine(xlahto, ylahto, xloppu, yloppu);
+
+
+
 
 
 

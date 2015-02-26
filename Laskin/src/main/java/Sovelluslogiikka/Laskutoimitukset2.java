@@ -7,9 +7,9 @@ import java.util.Scanner;
  * @author saves
  */
 /**
- * Luokka tarjoaa metodeita lineaarisen funktion kuvaajan piirtoon
- * Tällä hetkellä kerkeneräinen, vain konstruktorin luonti toimii
- * 
+ * Luokka tarjoaa metodeita lineaarisen funktion kuvaajan piirtoon Tällä
+ * hetkellä kerkeneräinen, vain konstruktorin luonti toimii
+ *
  */
 public class Laskutoimitukset2 {
 

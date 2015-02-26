@@ -22,20 +22,18 @@ public class Kuuntelija implements ActionListener {
     private JButton jakomerkki;
     private JButton neliojuuri;
     private JButton kuutiojuuri;
-    private JButton prosentti;
     private JButton potenssi;
     private JButton sin;
     private JButton cos;
     private JButton tan;
-    private JButton tulos;
     private JButton nollaus;
     private JTextField tulostekstikentta;
     private JTextField syotetekstikentta;
     private Laskutoimitukset laskutoimitukset;
 
     Kuuntelija(JButton plussa, JButton miinus, JButton kertomerkki, JButton jakomerkki,
-            JButton neliojuuri, JButton kuutiojuuri, JButton prosentti, JButton potenssi, JButton sin, JButton cos, JButton tan,
-            JButton tulos, JButton nollaus,
+            JButton neliojuuri, JButton kuutiojuuri, JButton potenssi, JButton sin, JButton cos, JButton tan,
+            JButton nollaus,
             JTextField tulostekstikentta, JTextField syotetekstikentta) {
         this.plussa = plussa;
         this.miinus = miinus;
@@ -43,12 +41,10 @@ public class Kuuntelija implements ActionListener {
         this.jakomerkki = jakomerkki;
         this.neliojuuri = neliojuuri;
         this.kuutiojuuri = kuutiojuuri;
-        this.prosentti = prosentti;
         this.potenssi = potenssi;
         this.sin = sin;
         this.cos = cos;
         this.tan = tan;
-        this.tulos = tulos;
         this.nollaus = nollaus;
         this.tulostekstikentta = tulostekstikentta;
         this.syotetekstikentta = syotetekstikentta;
@@ -80,8 +76,6 @@ public class Kuuntelija implements ActionListener {
             laskutoimitukset.neliojuuri(x);
         } else if (ae.getSource() == kuutiojuuri) {
             laskutoimitukset.kuutiojuuri(x);
-            // } else if (ae.getSource() == prosentti) {
-            //     laskutoimitukset.prosentti(x);
         } else if (ae.getSource() == potenssi) {
             laskutoimitukset.toiseenpotenssiin(x);
         } else if (ae.getSource() == sin) {
@@ -90,8 +84,6 @@ public class Kuuntelija implements ActionListener {
             laskutoimitukset.cos(x);
         } else if (ae.getSource() == tan) {
             laskutoimitukset.tan(x);
-        } else if (ae.getSource() == tulos) {
-            laskutoimitukset.tulos();
         } else {
             laskutoimitukset.nollaus();
         }

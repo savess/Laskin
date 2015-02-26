@@ -11,15 +11,11 @@ import static org.junit.Assert.*;
  *
  * @author saves
  */
-/**
- * Luokka tarjoaa Laskutoimitukset2 luokan testejä Tällä hetkellä testaa vain
- * konstruktoria
- */
-public class Laskutoimitukset2Test {
+public class ToisenAsteenYhtalonRatkaisuTest {
 
-    Laskutoimitukset2 piirtaja;
+    ToisenAsteenYhtalonRatkaisu tayr;
 
-    public Laskutoimitukset2Test() {
+    public ToisenAsteenYhtalonRatkaisuTest() {
     }
 
     @BeforeClass
@@ -32,7 +28,7 @@ public class Laskutoimitukset2Test {
 
     @Before
     public void setUp() {
-        piirtaja = new Laskutoimitukset2();
+        tayr = new ToisenAsteenYhtalonRatkaisu();
     }
 
     @After
@@ -45,7 +41,14 @@ public class Laskutoimitukset2Test {
     // public void hello() {}
 
     @Test
-    public void konstruktoriToimii() {
-        assertEquals("k on: 0 b on: 0", piirtaja.toString());
+    public void toisenAsteenYhtalonRatkaisuToimiiOikein1() {
+        tayr.ratkaise(-3, 6, -3);
+        assertEquals("x1: 1.0 ja x2: 1.0", tayr.toString());
+    }
+
+    @Test
+    public void toisenAsteenYhtalonRatkaisuToimiiOikein2() {
+        tayr.ratkaise(1, 2, -3);
+        assertEquals("x1: 1.0 ja x2: -3.0", tayr.toString());
     }
 }

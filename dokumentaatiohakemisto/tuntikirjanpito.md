@@ -4,3 +4,4 @@
 3-4.02.2015 muutama tunti neljännen viikon tehtäviä
 11.02.2015 lisää testejä, uusi pit-raportti
 17.2.2015 kuutiojuuri, testejä, pit, sekvenssikaaviota
+26.2.2015 lopullinen palautus mm. toisen asteen yhtälön ratkaisu ja paljon dokumentointia

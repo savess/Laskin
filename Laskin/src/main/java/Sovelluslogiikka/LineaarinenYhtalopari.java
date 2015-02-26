@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  */
 public class LineaarinenYhtalopari {
-    // private static Scanner in = new Scanner(System.in);
+    
 
     private double x;
     private double y;
@@ -26,33 +26,27 @@ public class LineaarinenYhtalopari {
      *
      */
     /**
-     * Metodi ratkaisee parametrinaan saamansa yhtälöparin
+     * Metodi ratkaisee parametrinaan saamansa yhtälöparin, joka koostuu
+     * kahdesta yhtölästä jotka ovat: ax + by = e ja cx + y = f
      *
      *
-     * @param a
-     * @param b
-     * @param c
-     * @param d
-     * @param e
-     * @param f
+     * @param a käyttäjän antama syöte 
+     * @param b käyttäjän antama syöte
+     * @param c käyttäjän antama syöte
+     * @param d käyttäjän antama syöte
+     * @param e käyttäjän antama syöte
+     * @param f käyttäjän antama syöte
      *
      * @return yhtälöparin ratkaisu
      */
     public void ratkaise(double a, double b, double c, double d, double e, double f) {
 
-        //System.out.println("Syötä a, b, c, d, e ja f: ");
-        // a = in.nextDouble();
-        //b = in.nextDouble();
-        //c = in.nextDouble();
-        //d = in.nextDouble();
-        //e = in.nextDouble();
-        //f = in.nextDouble();
 
         if ((a * d) - (b * c) != 0) {
             x = ((e * d) - (b * f)) / ((a * d) - (b * c));
             y = ((a * f) - (e * c)) / ((a * d) - (b * c));
             System.out.println("x: " + x + " ja y: " + y);
-        } else {
+        } else { // else koska nollalla ei saa jakaa
             x = 0;
             y = 0;
             System.out.println("Yhälöparilla ei ole ratkaisua");

@@ -12,11 +12,13 @@ public class Laskutoimitukset {
 
     private double luku2;
 
-    public Laskutoimitukset() {}
+    public Laskutoimitukset() {
+    }
 
     public Laskutoimitukset(double luku2) {
-        this.luku2 = luku2; 
+        this.luku2 = luku2;
     }
+
     /**
      * Metodi kertoo mikä luku2 tulee kun siitä poistetaan käyttäjän antama
      * syöte
@@ -68,10 +70,6 @@ public class Laskutoimitukset {
         luku2 /= luku1;
     }
 
-//    public void prosentti(double luku1) {
-        //kesken
-  //  }
-
     /**
      * Metodi kertoo mikä luku2 tulee kun käyttäjän syöte korotetaan toiseen
      * potenssiin
@@ -97,7 +95,7 @@ public class Laskutoimitukset {
     public void neliojuuri(double luku1) {
         luku2 = java.lang.Math.sqrt(luku1);
     }
-    
+
     /**
      * Metodi kertoo mikä luku2 tulee kun käyttäjän syötteestä otetaan
      * kuutiojuuri
@@ -107,7 +105,7 @@ public class Laskutoimitukset {
      *
      *
      */
-    public void kuutiojuuri(double luku1){
+    public void kuutiojuuri(double luku1) {
         luku2 = java.lang.Math.cbrt(luku1);
     }
 
